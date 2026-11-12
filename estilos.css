@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f7;
+  color: #252b33;
+}
+
+header {
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+header p {
+  color: #777;
+}
+
+main {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.tarjeta, .panel {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e1e5e9;
+}
+
+.tarjeta h3 {
+  color: #777;
+  font-size: 14px;
+}
+
+.tarjeta p {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.panel {
+  margin-top: 20px;
+}
+
+.panel h2 {
+  font-size: 19px;
+}
+
+canvas {
+  max-height: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 12px 6px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+th {
+  color: #777;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #888;
+}
+
+@media (max-width: 500px) {
+  .datos {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 12px;
+  }
+}

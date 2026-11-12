@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estación Meteorológica</title>
+<link rel="stylesheet" href="estilos.css">
+<script src="https://lcdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+<h1>Estación Meteorológica</h1>
+<p>Panel de monitoreo ambiental</p>
+</header>
+
+<main>
+<section class="datos">
+
+<div class="tarjeta">
+<h3>Temperatura</h3>
+<p id="temperatura">-- °C</p>
+</div>
+
+<div class="tarjeta">
+<h3>Humedad ambiente</h3>
+<p id="humedad">-- %</p>
+</div>
+
+<div class="tarjeta">
+<h3>Humedad del suelo</h3>
+<p id="suelo">-- %</p>
+</div>
+
+<div class="tarjeta">
+<h3>Estado de lluvia</h3>
+<p id="lluvia">Sin datos</p>
+</div>
+
+</section>
+
+<section class="panel">
+<h2>Mediciones</h2>
+<canvas id="grafico"></canvas>
+</section>
+
+<section class="panel">
+<h2>Historial de datos</h2>
+<table>
+<thead>
+<tr>
+<th>Hora</th>
+<th>Temperatura</th>
+<th>Humedad</th>
+<th>Suelo</th>
+</tr>
+</thead>
+<tbody id="historial"></tbody>
+</table>
+</section>
+
+<section class="panel">
+<h2>Fecha y hora</h2>
+<p id="reloj">--</p>
+</section>
+</main>
+
+<footer>
+Estación Meteorológica | Proyecto escolar
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
